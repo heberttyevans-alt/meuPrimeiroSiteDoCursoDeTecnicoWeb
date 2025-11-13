@@ -1,0 +1,124 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;/*define a fonte padrão para o corpo da página*/    
+}
+
+.menu-principal ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+}
+.menu-principal a{
+    text-decoration: none;
+    color:#333;
+    display:block;/*faz com que o link ocupe todo o espaço do elemento pai*/
+    padding:20px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.menu-principal a:hover{/*efeito ao passar o mouse sobre o link*/
+    background-color: #bbb;
+    color:#fff;
+}
+
+.hero{
+    min-height: 90vh; /*altura mínima de 90% da altura da janela de visualização*/
+    background-image: url(img/fundoSite.jpg);/*define a imagem de fundo*/
+    background-repeat: no-repeat;/*impede que a imagem de fundo se repita*/
+    background-size: cover; /*faz com que a imagem de fundo cubra todo o elemento*/
+    background-position: center; /*centraliza a imagem de fundo*/
+    display: flex; /*utiliza o modelo de layout flexível*/
+    justify-content: center; /*centraliza o conteúdo horizontalmente*/
+    align-items: center; /*centraliza o conteúdo verticalmente*/
+    color:#fff; /*define a cor do texto como branco*/    
+}
+
+.hero-content{
+    text-align: center; /*alinha o texto ao centro*/
+    background-color: rgba(0, 0, 0, 0.5); /*define uma cor de fundo preta com opacidade de 50%*/
+    padding: 40px; /*adiciona um espaçamento interno de 20px*/
+    border-radius: 8px; /*arredonda os cantos do elemento*/
+}
+
+.hero-content h1{
+    font-size: 48px; /*define o tamanho da fonte do título principal*/
+    margin-top: 0; /*remove a margem superior do título*/    margin-bottom: 15px; /*adiciona uma margem inferior de 20px*/
+}
+
+.hero-content p{
+    font-size: 20px; /*define o tamanho da fonte do parágrafo*/
+    margin-bottom: 30px; /*adiciona uma margem inferior de 20px*/
+}
+
+.hero-buton {
+    text-decoration: none; /*remove o sublinhado do link*/
+    color: #fff; /*define a cor do texto como branco*/
+    background-color: #3498db; /*define a cor de fundo do botão*/
+    padding: 15px 30px; /*adiciona um espaçamento interno de 15px vertical e 30px horizontal*/
+    text-decoration: none; /*remove o sublinhado do link*/
+    font-weight: bold; /*define o peso da fonte como negrito*/
+    display: inline-block; /*faz com que o link se comporte como um bloco inline, permitindo definir largura e altura*/
+    border-radius: 5px; /*arredonda os cantos do botão*/
+    font-size: 18px; /*define o tamanho da fonte do botão*/
+    transition: background-color 0.3s ease; /*adiciona uma transição suave para a cor de fundo ao passar o mouse*/
+}
+
+.hero-buton:hover {
+    background-color: #2980b9;
+    color: #b4ddf8; /*altera a cor do texto ao passar o mouse*/
+}
+
+/* Estilos das features */
+
+.features-container{
+    display: flex; /*utiliza o modelo de layout flexível*/
+    gap: 20px; /*adiciona um espaçamento de 20px entre os elementos flexíveis*/
+    padding: 60px 40px; /*adiciona um espaçamento interno de 60px vertical e 40px horizontal*/
+    background-color: #f4f4f4; /*define a cor de fundo do contêiner*/
+}
+
+.feature-card{
+    /*diz ao item: ocupe uma parte igual do espaço disponível*/
+    flex: 1;
+    background-color: #fff; /*define a cor de fundo do cartão*/
+    padding: 60px; /*adiciona um espaçamento interno de 40px*/
+    border-radius: 8px; /*arredonda os cantos do cartão*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /*adiciona uma sombra ao redor do cartão*/
+    text-align: center; /*alinha o texto ao centro*/    
+}
+
+.feature-card:hover{
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.253); /*aumenta a sombra ao passar o mouse*/
+    transform: translateY(-5px);
+}
+
+.sobre-nos{
+    background-color: #fff; /*define a cor de fundo da seção*/   
+    padding: 60px 40px; /*adiciona um espaçamento interno de 20px*/
+    display:flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.sobre-imagem{
+    padding-left: 50px;
+    flex:1;
+}
+
+.sobre-conteudo{
+    flex:1;
+    padding-left: 20px;
+}
+
+.sobre-imagem img{
+    max-width: 80%;        
+    display: block;          
+    border-radius: 15px 15px 15px 15px;
+}
