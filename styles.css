@@ -125,3 +125,75 @@ body{
 
 /* sessão de contato */
 
+.contato{
+    background-color: #f4f4f4; /*define a cor de fundo da seção*/
+    padding: 60px 40px; /*adiciona um espaçamento interno de 20px*/
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contato-img{
+    flex:1;
+    padding-left: 50px;
+}
+
+.contato-img img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.contato-form{
+    flex:1;
+    padding-right: 50px;
+}
+
+form label{
+    display: block; /*faz com que o rótulo ocupe toda a largura disponível*/
+    margin-top: 8px; /*adiciona uma margem inferior de 8px*/
+    font-weight: bold; /*define o peso da fonte como negrito*/
+    color: var(--cor-texto);
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    background-color: var(--cor-branca);
+}
+
+fomr imput:focus,
+for texarea:focus {
+    outline: none;
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0,3);
+}
+
+button.contato-button{
+    display:inline-block;
+    background-color: #627c8d;
+    color: var(--cor-branca);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer{
+    background-color: var(--cor-texto);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
